@@ -17,7 +17,7 @@ Tags = {
   "ᵀᵐˡ"
 }
 
-# --------------- {Start Up} --------------- #
+# --------------- {Start-Up} --------------- #
 activity = discord.Activity(name="The Moon Light", type=discord.ActivityType.competing)
 intents = discord.Intents( guilds=True,members=True,presences=True)
 bot = commands.Bot(command_prefix="$", intents=intents, activity=activity, status=discord.Status.do_not_disturb)
