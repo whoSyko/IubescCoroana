@@ -64,11 +64,11 @@ async def on_presence_update(before, after):
 
   if Vanity in ActualStatus:
     if not Vanity in PreviousStatus:
-      role = await after.guild.get_role(RoleId)
+      role = after.guild.get_role(RoleId)
       await after.add_roles(role, reason=f"{Vanity} $supporter")
         
   if not Vanity in ActualStatus:
-    role = await after.guild.get_role(RoleId)
+    role = after.guild.get_role(RoleId)
     if role in after.roles:
       await after.remove_roles(role, reason=f"Not {Vanity} $supporter")
       
