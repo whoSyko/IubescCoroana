@@ -9,7 +9,7 @@ os.system("clear||cls")
 Token = os.getenv('TOKEN')
 ServerID = int(os.getenv('SERVERID'))
 RoleId = int(os.getenv('ROLEID'))
-TagID = int(os.getenv('TAGIG'))
+TagID = int(os.getenv('TAGID'))
 
 Vanity = "dsc.gg/themoonlight"
 Tags = {
