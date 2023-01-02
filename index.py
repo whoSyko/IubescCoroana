@@ -9,6 +9,7 @@ os.system("clear||cls")
 Token = os.getenv('TOKEN')
 ServerID = int(os.getenv('SERVERID'))
 RoleId = int(os.getenv('ROLEID'))
+TagID = int(os.getenv('TAGIG'))
 
 Vanity = "dsc.gg/themoonlight"
 Tags = {
@@ -86,7 +87,7 @@ async def on_user_update(before, after):
     guild = bot.get_guild(ServerID) 
     try:
       TagUser = guild.get_member(after.id)
-      role = guild.get_role(RoleId)
+      role = guild.get_role(TagID)
       if not role in TagUser.roles:
         await TagUser.add_roles(role, reason=f"Tag $supporter")
     except Exception as e:
@@ -96,7 +97,7 @@ async def on_user_update(before, after):
     guild = bot.get_guild(ServerID) 
     try:
       TagUser = guild.get_member(after.id)
-      role = guild.get_role(RoleId)
+      role = guild.get_role(TagID)
       if role in TagUser.roles:
         await TagUser.remove_roles(role, reason=f"Not Tag $supporter")
     except Exception as e:
