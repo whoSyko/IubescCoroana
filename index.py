@@ -65,7 +65,6 @@ async def on_presence_update(before, after):
   if Vanity in ActualStatus:
     if not Vanity in PreviousStatus:
       role = after.guild.get_role(RoleId)
-      print(role, type(role))
       await after.add_roles(role, reason=f"{Vanity} $supporter")
         
   if not Vanity in ActualStatus:
