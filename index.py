@@ -11,7 +11,7 @@ ServerID = int(os.getenv('SERVERID'))
 RoleId = int(os.getenv('ROLEID'))
 TagID = int(os.getenv('TAGID'))
 
-Vanity = "dsc.gg/themoonlight"
+Vanity = "/tml"
 Tags = {
   "ᵀᴹᴸ",
   "ᵀᵐˡ"
